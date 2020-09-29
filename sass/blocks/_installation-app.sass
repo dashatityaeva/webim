@@ -1,0 +1,58 @@
+.installation-app
+    &__title
+        font-size: 30px
+        text-transform: uppercase
+        margin: 0
+        color: $text-color
+        +ubBold
+        padding-bottom: 30px
+    &__description
+        margin: 0
+        font-size: 16px
+        color: $text-color-light
+        +ubRegular
+        padding-bottom: 70px
+    &__list 
+        margin: 0  
+        padding: 0
+        padding-bottom: 40px
+    &__link
+        font-size: 24px
+        color:  #0da088   
+        +ubRegular
+        text-decoration: none
+        border-bottom: 2px solid $link    
+    &__description-link
+        max-width: 750px
+        font-size: 16px
+        color: $text-color-light
+        +ubRegular        
+    &__item    
+        display: inline-flex  
+        list-style-type: none 
+        padding-bottom: 40px   
+    &__marker
+        margin-top: 10px
+        margin-right: 35px
+        width: 8px
+        height: 8px
+        border: 2px solid $text-color 
+        border-radius: 50%        
+        box-sizing: border-box
+        background: $text-color
+
+@media  ( max-width: 750px ) 
+    .installation-app
+        &__title
+            font-size: 48px 
+        &__description
+            font-size: 24px 
+        &__link
+            font-size: 30px  
+        &__description-link
+            font-size: 24px  
+@media  ( max-width: 375px )
+    .installation-app
+        &__title
+            font-size: 35px  
+

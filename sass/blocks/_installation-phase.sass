@@ -1,0 +1,77 @@
+.installation-phase
+    padding-bottom: 90px
+    &__phases
+        display: flex
+        justify-content: flex-start
+    &__phase 
+        padding-right: 200px   
+    &__title
+        font-size: 30px
+        text-transform: uppercase
+        margin: 0
+        color: $text-color
+        +ubBold
+    &__subtitle  
+        margin: 0
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.025em
+        max-width: 750px
+        padding-top: 30px
+        padding-bottom: 90px
+        color: $text-color-light
+        +myrRegular  
+    &__number
+        +ubBold
+        margin: 0
+        margin-top: -50px
+        margin-left: -70px
+        font-size: 200px 
+        color: #e1e2e9  
+    &__icon
+        margin-top: -110px
+        fill: $text-color 
+    &__svg
+        width: 50px
+        height: 50px 
+    &__links
+        margin-top: 45px  
+    &__link
+        font-size: 18px
+        color: $link
+        margin-top: 405px  
+        +ubRegular
+        text-decoration: none
+        border-bottom: 2px solid $link
+@media  ( max-width: 991px )
+    .installation-phase
+        &__phases
+            margin-left: 50px
+        &__phase
+            margin-left: 0
+@media  ( max-width: 750px )
+    .installation-phase
+        &__title
+            font-size: 48px
+        &__subtitle  
+            font-size: 24px    
+        &__phases
+            margin-left: 70px  
+        &__phase
+            padding-right: 170px              
+@media  ( max-width: 700px )
+    .installation-phase
+        &__phases
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            align-content: center
+            margin-left: 70px
+        &__phase
+            flex-basis: 100%
+            padding-right: 0
+            padding-bottom: 20px
+@media  ( max-width: 375px )
+    .installation-phase
+        &__title
+            font-size: 35px            

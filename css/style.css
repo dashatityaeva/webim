@@ -1,0 +1,1188 @@
+@font-face {
+  font-family: 'MyriadPro Regular';
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Bold';
+  src: url("../fonts/Ubuntu-Bold.eot");
+  src: url("../fonts/Ubuntu-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu-Bold.woff") format("woff"), url("../fonts/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu Regular';
+  src: url("../fonts/Ubuntu-Regular.eot");
+  src: url("../fonts/Ubuntu-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body .w {
+  fill: red;
+}
+
+body .bg-primary {
+  background-color: #ffffff;
+}
+
+body .bg-secondary {
+  background-color: #eff4f4;
+}
+
+body .button {
+  height: 50px;
+  font-size: 14.4px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  text-transform: uppercase;
+  background-color: #2cd3b8;
+  color: #ffffff;
+  font-family: 'Ubuntu Bold', sans-serif;
+  margin-right: 20px;
+}
+
+body .btn-tariff {
+  border: 1px solid #393e6b;
+  background-color: transparent;
+  color: #393e6b;
+}
+
+body .btn-test {
+  background-color: #393e6b;
+}
+
+@media (max-width: 750px) {
+  body .button {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 425px) {
+  body .button {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1680px;
+  margin: auto;
+}
+
+.main-wrap {
+  max-width: 1024px;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.inner-wrap {
+  max-width: 1540px;
+}
+
+.footer-wrapper {
+  max-width: 1540px;
+  margin: auto;
+}
+
+@media (max-width: 1570px) {
+  .container {
+    max-width: 1198px;
+  }
+  .inner-wrap, .footer-wrapper {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main-wrap {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .main-wrap {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 700px;
+    padding: 0 10px;
+  }
+  .main-wrap {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    max-width: 616px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.header-wrap {
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  background-color: #fff;
+  margin: auto;
+}
+
+.inner-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  margin: auto;
+}
+
+.go-in {
+  min-width: 950px;
+}
+
+.go-in__link {
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+  padding-right: 35px;
+  color: #393e6b;
+  font-family: 'MyriadPro Regular', sans-serif;
+}
+
+.menu__nav {
+  margin-right: 20px;
+}
+
+.menu__link {
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: red;
+  margin: 0 10px;
+  color: #393e6b;
+  font-family: 'MyriadPro Regular', sans-serif;
+}
+
+.menu__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: moveRight 2s;
+          animation: moveRight 2s;
+}
+
+@keyframes moveRight {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.logo-wrap {
+  width: 100%;
+}
+
+.navbar-btn {
+  display: none;
+  fill: #2cd3b8;
+  width: 55px;
+  height: 45px;
+}
+
+.navbar__mobile {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-wrap__active {
+  height: 320px;
+}
+
+.go-in__active, .menu__nav__active {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+}
+
+@media (max-width: 1570px) {
+  .go-in {
+    min-width: 550px;
+  }
+}
+
+@media (max-width: 1570px) {
+  .go-in {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 991px) {
+  .go-in {
+    min-width: 160px;
+  }
+  .go-in__link {
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .logo-svg {
+    width: 230px;
+    margin-left: -150px;
+  }
+  .navbar__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .go-in__hidden, .menu__nav__hidden {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+  .go-in, .menu__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 0;
+  }
+  .menu__link, .go-in__link {
+    margin: 5px 0;
+  }
+}
+
+.installation-info {
+  padding-top: 80px;
+}
+
+.installation-info__title {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #393e6b;
+  font-family: 'Ubuntu Bold', sans-serif;
+  -webkit-animation: moveRight 1.2s;
+          animation: moveRight 1.2s;
+}
+
+.installation-info__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  max-width: 750px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  color: #74757b;
+  opacity: 0;
+  -webkit-animation: moveRight 1.2s  0.3s forwards;
+          animation: moveRight 1.2s  0.3s forwards;
+  font-family: 'MyriadPro Regular', sans-serif;
+}
+
+.installation-info__buttons {
+  padding-bottom: 68px;
+}
+
+.installation-info__button-try-free {
+  padding: 0 30px;
+  opacity: 0;
+  -webkit-animation: fadeIn 1.2s  0.3s forwards;
+          animation: fadeIn 1.2s  0.3s forwards;
+}
+
+.installation-info__button-tariff {
+  padding: 0 95px;
+  opacity: 0;
+  -webkit-animation: fadeIn 1.2s  0.5s  forwards;
+          animation: fadeIn 1.2s  0.5s  forwards;
+}
+
+@media (max-width: 750px) {
+  .installation-info__title {
+    font-size: 48px;
+  }
+  .installation-info__description {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 375px) {
+  .installation-info__title {
+    font-size: 35px;
+  }
+}
+
+@-webkit-keyframes moveRight {
+  from {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.installation-phase {
+  padding-bottom: 90px;
+}
+
+.installation-phase__phases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.installation-phase__phase {
+  padding-right: 200px;
+}
+
+.installation-phase__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #393e6b;
+  font-family: 'Ubuntu Bold', sans-serif;
+}
+
+.installation-phase__subtitle {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+  max-width: 750px;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  color: #74757b;
+  font-family: 'MyriadPro Regular', sans-serif;
+}
+
+.installation-phase__number {
+  font-family: 'Ubuntu Bold', sans-serif;
+  margin: 0;
+  margin-top: -50px;
+  margin-left: -70px;
+  font-size: 200px;
+  color: #e1e2e9;
+}
+
+.installation-phase__icon {
+  margin-top: -110px;
+  fill: #393e6b;
+}
+
+.installation-phase__svg {
+  width: 50px;
+  height: 50px;
+}
+
+.installation-phase__links {
+  margin-top: 45px;
+}
+
+.installation-phase__link {
+  font-size: 18px;
+  color: #0da088;
+  margin-top: 405px;
+  font-family: 'Ubuntu Regular', sans-serif;
+  text-decoration: none;
+  border-bottom: 2px solid #0da088;
+}
+
+@media (max-width: 991px) {
+  .installation-phase__phases {
+    margin-left: 50px;
+  }
+  .installation-phase__phase {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .installation-phase__title {
+    font-size: 48px;
+  }
+  .installation-phase__subtitle {
+    font-size: 24px;
+  }
+  .installation-phase__phases {
+    margin-left: 70px;
+  }
+  .installation-phase__phase {
+    padding-right: 170px;
+  }
+}
+
+@media (max-width: 700px) {
+  .installation-phase__phases {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin-left: 70px;
+  }
+  .installation-phase__phase {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .installation-phase__title {
+    font-size: 35px;
+  }
+}
+
+.installation-html__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #393e6b;
+  font-family: 'Ubuntu Bold', sans-serif;
+  padding-bottom: 80px;
+}
+
+.installation-html__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.installation-html__link {
+  font-size: 24px;
+  color: #0da088;
+  font-family: 'Ubuntu Regular', sans-serif;
+  text-decoration: none;
+  border-bottom: 2px solid #0da088;
+}
+
+.installation-html__description {
+  font-size: 16px;
+  color: #74757b;
+  font-family: 'Ubuntu Regular', sans-serif;
+}
+
+.installation-html__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+  padding-bottom: 40px;
+}
+
+.installation-html__marker {
+  margin-top: 10px;
+  margin-right: 35px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #393e6b;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #393e6b;
+}
+
+@media (max-width: 750px) {
+  .installation-html__title {
+    font-size: 48px;
+  }
+  .installation-html__link {
+    font-size: 30px;
+  }
+  .installation-html__description {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .installation-html__title {
+    font-size: 35px;
+  }
+}
+
+.installation-html__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #393e6b;
+  font-family: 'Ubuntu Bold', sans-serif;
+  padding-bottom: 80px;
+}
+
+.installation-html__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.installation-html__link {
+  font-size: 24px;
+  color: #0da088;
+  font-family: 'Ubuntu Regular', sans-serif;
+  text-decoration: none;
+  border-bottom: 2px solid #0da088;
+}
+
+.installation-html__description {
+  font-size: 16px;
+  color: #74757b;
+  font-family: 'Ubuntu Regular', sans-serif;
+}
+
+.installation-html__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+  padding-bottom: 40px;
+}
+
+.installation-html__marker {
+  margin-top: 10px;
+  margin-right: 35px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #393e6b;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #393e6b;
+}
+
+@media (max-width: 750px) {
+  .installation-html__title {
+    font-size: 48px;
+  }
+  .installation-html__link {
+    font-size: 30px;
+  }
+  .installation-html__description {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .installation-html__title {
+    font-size: 35px;
+  }
+}
+
+.installation-app__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #393e6b;
+  font-family: 'Ubuntu Bold', sans-serif;
+  padding-bottom: 30px;
+}
+
+.installation-app__description {
+  margin: 0;
+  font-size: 16px;
+  color: #74757b;
+  font-family: 'Ubuntu Regular', sans-serif;
+  padding-bottom: 70px;
+}
+
+.installation-app__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.installation-app__link {
+  font-size: 24px;
+  color: #0da088;
+  font-family: 'Ubuntu Regular', sans-serif;
+  text-decoration: none;
+  border-bottom: 2px solid #0da088;
+}
+
+.installation-app__description-link {
+  max-width: 750px;
+  font-size: 16px;
+  color: #74757b;
+  font-family: 'Ubuntu Regular', sans-serif;
+}
+
+.installation-app__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style-type: none;
+  padding-bottom: 40px;
+}
+
+.installation-app__marker {
+  margin-top: 10px;
+  margin-right: 35px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #393e6b;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #393e6b;
+}
+
+@media (max-width: 750px) {
+  .installation-app__title {
+    font-size: 48px;
+  }
+  .installation-app__description {
+    font-size: 24px;
+  }
+  .installation-app__link {
+    font-size: 30px;
+  }
+  .installation-app__description-link {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .installation-app__title {
+    font-size: 35px;
+  }
+}
+
+.steps-after-installation__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #393e6b;
+  font-family: 'Ubuntu Bold', sans-serif;
+  padding-bottom: 30px;
+}
+
+.steps-after-installation__description {
+  margin: 0;
+  font-size: 16px;
+  color: #74757b;
+  font-family: 'Ubuntu Regular', sans-serif;
+  padding-bottom: 70px;
+}
+
+.steps-after-installation__step {
+  min-width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.steps-after-installation__svg {
+  width: 74px;
+  height: 74px;
+  margin-right: 30px;
+}
+
+.steps-after-installation__circle {
+  fill: #2cd3b8;
+}
+
+.steps-after-installation__icon {
+  fill: #ffffff;
+}
+
+.steps-after-installation__name-step {
+  margin-right: 10px;
+  font-family: 'Ubuntu Bold', sans-serif;
+  font-size: 24px;
+  color: #393e6b;
+}
+
+.steps-after-installation__description-step {
+  color: #393e6b;
+  font-size: 18px;
+  font-family: 'Ubuntu Regular', sans-serif;
+}
+
+.steps-after-installation__buttons {
+  padding: 75px 0;
+}
+
+.steps-after-installation__button {
+  padding: 0 30px;
+}
+
+@media (max-width: 750px) {
+  .steps-after-installation__title {
+    font-size: 48px;
+  }
+  .steps-after-installation__description {
+    font-size: 24px;
+  }
+  .steps-after-installation__svg {
+    min-width: 100px;
+    height: 100px;
+  }
+  .steps-after-installation__description-step {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .steps-after-installation__title {
+    font-size: 35px;
+  }
+  .steps-after-installation__svg {
+    min-width: 60px;
+    height: 100px;
+  }
+}
+
+.social-network__description {
+  color: #393e6b;
+  font-family: 'Ubuntu Regular', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.social-network__sn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 80px 0;
+}
+
+.social-network__item {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-network__item-link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #0da088;
+  font-family: 'Ubuntu Regular', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  text-decoration: none;
+  border-bottom: 2px solid #0da088;
+}
+
+.social-network__icon {
+  max-width: 40px;
+  height: 40px;
+  margin-left: 4px;
+  margin-right: 30px;
+}
+
+.social-network__icon-sn {
+  fill: #3b4269;
+}
+
+.social-network__icon-feedback {
+  fill: #dab81a;
+}
+
+.social-network__icon-app {
+  fill: #ffffff;
+}
+
+.social-network__icon-app-bg {
+  fill: #88bc17;
+}
+
+.social-network__icon-msn {
+  fill: #ffffff;
+}
+
+.social-network__icon-msn-bg {
+  fill: #3dd3a1;
+}
+
+.social-network__icon-email {
+  fill: #ffffff;
+}
+
+.social-network__icon-email-bg {
+  fill: #5f98d1;
+}
+
+.social-network__icon-chatbots {
+  fill: #ffffff;
+}
+
+.social-network__icon-chatbots-bg {
+  fill: #33afd1;
+}
+
+.ff {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #0da088;
+  font-family: 'Ubuntu Regular', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  text-decoration: none;
+  border-bottom: 2px solid #0da088;
+}
+
+@media (max-width: 1199px) {
+  .social-network__item {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media (max-width: 750px) {
+  .social-network__description {
+    font-size: 24px;
+  }
+  .social-network__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .social-network__item-link {
+    font-size: 24px;
+  }
+  .social-network__icon {
+    width: 67px;
+    height: 67px;
+  }
+}
+
+.footer-wrap {
+  width: 100%;
+  background-color: #393e6b;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.footer-column {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  padding-top: 60px;
+}
+
+.footer-contacts {
+  margin-left: -300px;
+}
+
+.footer-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  font-family: 'Ubuntu Regular', sans-serif;
+  color: #b4b7c7;
+}
+
+.footer__logo {
+  width: 110px;
+  height: 27px;
+  margin-bottom: 20px;
+}
+
+.footer__subtitle {
+  margin-bottom: 5px;
+}
+
+.footer-block {
+  padding-bottom: 30px;
+}
+
+.footer-block__phone-main {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+}
+
+.footer__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.footer__icon-phone {
+  fill: #68cdbc;
+}
+
+.footer__phone {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Ubuntu Regular', sans-serif;
+  font-size: 20px;
+}
+
+.footer__phone-main {
+  font-size: 25px;
+}
+
+.footer__address {
+  font-style: normal;
+  font-family: 'Ubuntu Regular', sans-serif;
+  color: #b4b7c7;
+  font-size: 16px;
+}
+
+.footer-info {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer-info__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 35px;
+}
+
+.footer-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.footer__mail {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Ubuntu Regular', sans-serif;
+  margin-bottom: 5px;
+}
+
+.footer__working-mode {
+  font-family: 'Ubuntu Regular', sans-serif;
+  color: #b4b7c7;
+}
+
+.footer-social {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.footer-social__link {
+  margin-right: 25px;
+}
+
+.footer-social__image {
+  width: 30px;
+  height: 30px;
+  fill: #b4b7c7;
+}
+
+.anim {
+  width: 100px;
+  height: 100px;
+  -webkit-transition: all 1s 0s ease;
+  transition: all 1s 0s ease;
+}
+
+.chat-bubble {
+  fill: #393e6b;
+  position: fixed;
+  right: 100px;
+  bottom: 40px;
+}
+
+.chat {
+  fill: #0da088;
+  width: 40px;
+  height: 40px;
+}
+
+.chat:hover {
+  cursor: pointer;
+}
+
+.anim {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 1199px) {
+  .footer-contacts {
+    margin-left: -150px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-contacts {
+    margin-left: -80px;
+  }
+  .footer-info__wrap {
+    margin-right: 0;
+  }
+  .footer__phone {
+    font-size: 18px;
+  }
+  .footer__phone-main {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer-contacts, .footer-info, .footer__logo {
+    display: none;
+  }
+  .footer-wrapper {
+    padding-bottom: 50px;
+  }
+}

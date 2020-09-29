@@ -1,0 +1,47 @@
+.installation-info
+    padding-top: 80px
+    &__title
+        font-size: 36px
+        text-transform: uppercase
+        margin: 0
+        color: $text-color
+        +ubBold
+        animation: moveRight 1.2s 
+
+    &__description
+        margin: 0
+        font-size: 16px
+        line-height: 24px
+        letter-spacing: 0.025em
+        max-width: 750px
+        padding-top: 50px
+        padding-bottom: 60px
+        color: $text-color-light
+        opacity: 0
+        animation: moveRight 1.2s  0.3s forwards
+        +myrRegular
+    &__buttons
+        padding-bottom: 68px
+        
+    &__button-try-free
+        padding: 0 30px 
+        opacity: 0
+        animation: fadeIn 1.2s  0.3s forwards
+    &__button-tariff
+        padding: 0 95px 
+        opacity: 0 
+        animation: fadeIn 1.2s  0.5s  forwards
+
+@media  ( max-width: 750px )
+    .installation-info
+        &__title
+            font-size: 48px
+        &__description
+            font-size: 26px    
+@media  ( max-width: 375px )
+    .installation-info
+        &__title
+            font-size: 35px
+
++moveR   
++fadeIn

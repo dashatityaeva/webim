@@ -1,0 +1,101 @@
+.header-wrap
+    position: fixed //фиксирует навигацию на экране при прокрутке
+    width: 100%
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25)
+    z-index: 1
+    background-color: #fff
+    margin: auto
+.inner-wrap, 
+    display: flex //выстроить в линию
+    align-items: center //центрирует относительно вертикали
+    justify-content: space-between //Флексы равномерно распределяются по всей строке.
+    height: 100px
+    margin: auto
+.go-in
+    min-width: 950px
+    &__link
+        font-size: 15px
+        text-decoration: none
+        text-transform: uppercase
+        color: red  
+        padding-right: 35px
+        color: $text-color
+        +myrRegular     
+.menu
+    &__nav
+        margin-right: 20px
+    &__link
+        font-size: 15px
+        text-decoration: none
+        text-transform: uppercase
+        color: red 
+        margin: 0 10px 
+        color: $text-color
+        +myrRegular
+    &__logo
+        display: flex
+        width: 100px
+        align-items: center
+        animation: moveRight 2s
+
+@keyframes moveRight
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)  
+        
+        // &:hover
+        //     transform: scaleX(2)  
+.logo        
+    &-wrap
+        width: 100%
+.navbar-btn
+    display: none
+    fill: #2cd3b8
+    width: 55px
+    height: 45px
+.navbar__mobile
+    display: inline-flex
+    justify-content: space-between
+.header-wrap__active
+    height: 320px
+// .go-in__hidden, .menu__nav__hidden //работать!!!
+//     transform: translateY(-150px)    
+.go-in__active, .menu__nav__active
+    transition: 0.2s
+    transform: translateY(150px)
+    //////////////////////////
+@media  ( max-width: 1570px ) 
+    .go-in
+        min-width: 550px    
+@media  ( max-width: 1570px ) 
+    .go-in
+        min-width: 400px  
+@media  ( max-width: 991px ) 
+    .go-in
+        min-width: 160px 
+        &__link  
+            padding-right: 5px
+@media  ( max-width: 750px ) 
+    .navbar-btn
+        display: flex
+    .logo-svg
+        width: 230px
+        margin-left: -150px
+    .navbar__mobile
+        display: flex
+        flex-direction: column 
+    .go-in__hidden, .menu__nav__hidden //работать!!!
+        transform: translateY(-150px)        
+    .go-in, .menu__nav
+        display: flex
+        flex-direction: column
+        margin: 20px 0
+        //transform: translateY(150px)
+        //visibility: hidden
+    .menu__link, .go-in__link    
+        margin: 5px 0
+
+   
+     
+    

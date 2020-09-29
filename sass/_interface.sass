@@ -1,0 +1,37 @@
+body
+    .w
+        fill: red
+    .bg-primary
+        background-color: $bg-primary
+    .bg-secondary
+        background-color:  $bg-secondary
+    .button
+        height: 50px
+        font-size: 14.4px
+        border-radius: 30px
+        text-decoration: none
+        border: none //откл отводка
+        text-transform: uppercase //капс
+        background-color: $color-btn    
+        color: #ffffff
+        +ubBold   
+        margin-right: 20px
+    .btn-tariff 
+        border: 1px solid $text-color
+        background-color: transparent 
+        color: $text-color 
+    .btn-test         
+        background-color: $text-color
+
+@media  ( max-width: 750px )
+    body
+        .button
+            width: 100% 
+            margin-bottom: 30px 
+            font-size: 24px
+@media  ( max-width: 425px )
+    body
+        .button
+            width: 100% 
+            margin-bottom: 20px 
+            font-size: 20px            
