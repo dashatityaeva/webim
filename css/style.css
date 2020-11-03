@@ -45,6 +45,12 @@ body .button {
   color: #ffffff;
   font-family: 'Ubuntu Bold', sans-serif;
   margin-right: 20px;
+  cursor: pointer;
+  padding: 15px 10px;
+}
+
+body .button:hover {
+  opacity: 0.5;
 }
 
 body .btn-tariff {
@@ -350,9 +356,9 @@ body {
 
 .installation-info__button-try-free {
   padding: 0 30px;
-  opacity: 0;
   -webkit-animation: fadeIn 1.2s  0.3s forwards;
           animation: fadeIn 1.2s  0.3s forwards;
+  opacity: 0;
 }
 
 .installation-info__button-tariff {
@@ -1186,3 +1192,4 @@ body {
     padding-bottom: 50px;
   }
 }
+/*# sourceMappingURL=style.css.map */
