@@ -44,9 +44,9 @@ body .button {
   background-color: #2cd3b8;
   color: #ffffff;
   font-family: 'Ubuntu Bold', sans-serif;
+  padding: 15px 10px;
   margin-right: 20px;
   cursor: pointer;
-  padding: 15px 10px;
 }
 
 body .button:hover {
